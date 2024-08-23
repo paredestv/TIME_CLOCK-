@@ -1,0 +1,97 @@
+/* styles.css */
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+    background-color: #282c34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #4a90e2, #14557b);
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    background-color: #1c1e24;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+.timer__controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.timer__controls form {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.timer__controls input {
+    flex: 1;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #444;
+    font-size: 1.5rem;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.timer__button {
+    flex: 1;
+    background: #4a90e2;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.timer__button:hover,
+.timer__button:focus {
+    background: #357ab9;
+    outline: none;
+}
+
+.display {
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.display__time-left {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.display__end-time {
+    font-size: 2rem;
+    margin: 10px 0;
+    color: #b0bec5;
+}
